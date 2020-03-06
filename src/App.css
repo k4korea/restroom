@@ -28,7 +28,7 @@ footer {
 
 .logo {
   display: block;
-  height: 240px;
+  height: 15vw;
   line-height: 0;
   margin: 15px 0;
   overflow: hidden;
@@ -150,19 +150,6 @@ footer {
   border: 1px solid #0ac;
   box-shadow: 0 0 0 1px #0ac;
   outline: 0;
-}
-
-.icon-trophy {
-  height: 26px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.icon-logo {
-  height: 40px;
-  position: relative;
-  top: 20%;
 }
 
 .text_normal {
