@@ -1,0 +1,20 @@
+{
+    "demo": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-restroom-demo-152639-authRole",
+            "UnauthRoleArn": "arn:aws:iam::122547080666:role/amplify-restroom-demo-152639-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::122547080666:role/amplify-restroom-demo-152639-authRole",
+            "Region": "ap-northeast-2",
+            "DeploymentBucketName": "amplify-restroom-demo-152639-deployment",
+            "UnauthRoleName": "amplify-restroom-demo-152639-unauthRole",
+            "StackName": "amplify-restroom-demo-152639",
+            "StackId": "arn:aws:cloudformation:ap-northeast-2:122547080666:stack/amplify-restroom-demo-152639/7acf5fb0-5f73-11ea-b73b-061f2b82ef26",
+            "AmplifyAppId": "d2znmiszy4zri1"
+        },
+        "categories": {
+            "auth": {
+                "restroom155104f0": {}
+            }
+        }
+    }
+}

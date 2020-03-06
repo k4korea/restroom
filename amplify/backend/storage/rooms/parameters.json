@@ -1,0 +1,5 @@
+{
+    "tableName": "restroom-rooms",
+    "partitionKeyName": "room_id",
+    "partitionKeyType": "S"
+}

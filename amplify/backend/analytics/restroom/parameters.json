@@ -1,0 +1,20 @@
+{
+    "appName": "restroom",
+    "roleName": "pinpointLambdaRole43ac1f75",
+    "cloudWatchPolicyName": "cloudWatchPolicy43ac1f75",
+    "pinpointPolicyName": "pinpointPolicy43ac1f75",
+    "authPolicyName": "pinpoint_amplify_43ac1f75",
+    "unauthPolicyName": "pinpoint_amplify_43ac1f75",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

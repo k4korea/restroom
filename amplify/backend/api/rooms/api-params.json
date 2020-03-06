@@ -1,0 +1,44 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "rooms",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ],
+                "unauth": [
+                    "/GET"
+                ]
+            }
+        }
+    ],
+    "resourceName": "rooms",
+    "apiName": "rooms",
+    "functionArns": [
+        {
+            "lambdaFunction": "rooms"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "amplify-restroom-demo-152639-authRole",
+        "unAuthRoleName": "amplify-restroom-demo-152639-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "rooms",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
