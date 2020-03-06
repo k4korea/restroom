@@ -9,9 +9,12 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <div className='person-detected'>
-          <RoomList />
-        </div>
+        <header className='App-header'>
+          <div className='logo'>
+            <img alt='deepracer' src='/gpdd.png' />
+          </div>
+        </header>
+        <RoomList />
       </Fragment>
     );
   }

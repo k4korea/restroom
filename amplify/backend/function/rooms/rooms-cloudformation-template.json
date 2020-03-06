@@ -71,7 +71,7 @@
 				"Timeout": "25",
 				"Code": {
 					"S3Bucket": "amplify-restroom-demo-152639-deployment",
-					"S3Key": "amplify-builds/rooms-554a576b79662f697256-build.zip"
+					"S3Key": "amplify-builds/rooms-6265395742634461682b-build.zip"
 				}
 			}
 		},

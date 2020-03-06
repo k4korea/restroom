@@ -19,14 +19,14 @@ class App extends Component {
   }
 
   getRooms = async () => {
-    const res = await API.get('rooms', '/items/' + this.props.room_type);
+    const res = await API.get('rooms', '/items/');
     if (res && res.length > 0) {
       this.reloaded(res);
     }
   }
 
   reloaded(res) {
-    let items = res.sort(this.compare);
+    let items = res.sort(this.compare).reverse();
 
     console.log(items)
 

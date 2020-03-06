@@ -26,50 +26,9 @@ footer {
   color: #555;
 }
 
-.person-detected {
-  border: 1px solid #0ac;
-  font-size: 2vw;
-  height: 99%;
-  left: 0;
-  list-style: none;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  overflow: scroll;
-  position: fixed;
-  width: 74%;
-}
-
-.person-unknown {
-  border: 1px solid #0ac;
-  font-size: 1vw;
-  height: 99%;
-  left: 75%;
-  list-style: none;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  overflow: scroll;
-  position: fixed;
-  width: 24%;
-}
-
-.person-item {
-  width: 45%;
-  float: left;
-  padding: 5px;
-}
-
-.person-photo {
-  width: 100%;
-}
-
-.person-name {
-  background-color: #456;
-  margin-bottom: 1vw;
-}
-
 .logo {
   display: block;
-  height: 300px;
+  height: 240px;
   line-height: 0;
   margin: 15px 0;
   overflow: hidden;
@@ -78,6 +37,72 @@ footer {
 
 .logo img {
   height: 100%;
+}
+
+.title {
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.lb-items {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.lb-items .lb-header,
+.lb-items .lb-row {
+  display: flex;
+  width: 100%;
+}
+
+.lb-items .lb-header {
+  color: #aaa;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.lb-items .lb-row {
+  background: linear-gradient(90deg, #456 0, #326);
+  color: #fff;
+  font-size: 3vw;
+  margin-bottom: 5px;
+}
+
+.lb-items .lb-header>div,
+.lb-items .lb-row>div {
+  padding: 15px 30px;
+  text-align: center;
+}
+
+.lb-items .lb-header>div:nth-child(1),
+.lb-items .lb-row>div:nth-child(1) {
+  width: 33%;
+}
+
+.lb-items .lb-header>div:nth-child(2),
+.lb-items .lb-row>div:nth-child(2) {
+  margin-right: auto;
+  text-align: left;
+  width: 33%;
+}
+
+.lb-items .lb-header>div:nth-child(n+3),
+.lb-items .lb-row>div:nth-child(n+3) {
+  display: block;
+  text-align: left;
+  width: 33%;
+}
+
+.lb-items .lb-rank1,
+.lb-items .lb-rank2,
+.lb-items .lb-rank3 {
+  color: #222;
+}
+
+.lb-ball {
+  width: 4vw;
 }
 
 .lb-submit {
@@ -125,6 +150,19 @@ footer {
   border: 1px solid #0ac;
   box-shadow: 0 0 0 1px #0ac;
   outline: 0;
+}
+
+.icon-trophy {
+  height: 26px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.icon-logo {
+  height: 40px;
+  position: relative;
+  top: 20%;
 }
 
 .text_normal {
