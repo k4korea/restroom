@@ -9,10 +9,10 @@ class App extends Component {
     let ball = <img alt='gray' src="/ball/gray.png" className="lb-ball" />;
     let latest = '-';
 
-    if (this.props.item.available === 'o') {
-      ball = <img alt='green' src="/ball/green.png" className="lb-ball" />;
-    } else if (this.props.item.available === 'x') {
+    if (this.props.item.available === 'x') {
       ball = <img alt='red' src="/ball/red.png" className="lb-ball" />;
+    } else if (this.props.item.available === 'o') {
+      ball = <img alt='green' src="/ball/green.png" className="lb-ball" />;
 
       if (diff < 60) {
         latest = parseInt(diff) + '초 전';
