@@ -32,7 +32,6 @@ class App extends Component {
         <div className='lb-row'>
           <div>{this.props.item.room_id}</div>
           <div>{ball}</div>
-          <div>{latest}</div>
         </div>
       </Fragment>
     );
