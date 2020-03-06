@@ -16,13 +16,15 @@ class App extends Component {
     let latest = '-';
 
     if (diff < 60) {
-      latest = diff + '초 전';
+      latest = parseInt(diff) + '초 전';
     } else if (diff < 60 * 60) {
-      latest = Math.floor(diff / (60)) + '분 전';
+      latest = parseInt(diff / 60) + '분 전';
     } else if (diff < 60 * 60 * 24) {
-      latest = Math.floor(diff / (60 * 60)) + '시간 전';
+      latest = parseInt(diff / (60 * 60)) + '시간 전';
     } else {
-      latest = Math.floor(diff / (60 * 60 * 24)) + '일 전';
+      latest = parseInt(diff / (60 * 60 * 24)) + '일 전';
+
+      ball = <img alt='gray' src="/ball/gray.png" className="lb-ball" />;
     }
 
     return (
