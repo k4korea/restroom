@@ -11,7 +11,7 @@ class App extends Component {
       <Fragment>
         <header className='App-header'>
           <div className='logo'>
-            <img alt='deepracer' src='/gpdd.png' />
+            <img alt='gpdd' src='/gpdd.png' />
           </div>
         </header>
         <RoomList />
