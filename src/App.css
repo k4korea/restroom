@@ -85,14 +85,14 @@ footer {
 .lb-items .lb-row>div:nth-child(2) {
   margin-right: auto;
   text-align: left;
-  width: 30%;
+  width: 20%;
 }
 
 .lb-items .lb-header>div:nth-child(n+3),
 .lb-items .lb-row>div:nth-child(n+3) {
   display: block;
   text-align: left;
-  width: 20%;
+  width: 30%;
 }
 
 .lb-items .lb-rank1,
