@@ -46,7 +46,7 @@ class App extends Component {
 
   render() {
     const list = this.state.items.map(
-      (item, index) => (<RoomItem key={index} item={item} pathPrefix={this.props.pathPrefix} />)
+      (item, index) => (<RoomItem key={index} item={item} mode={this.props.mode} pathPrefix={this.props.pathPrefix} />)
     );
 
     return (

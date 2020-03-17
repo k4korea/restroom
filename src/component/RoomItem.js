@@ -30,6 +30,10 @@ class App extends Component {
       latest = '-';
     }
 
+    if (this.props.mode === 'dist') {
+      latest += ` (${this.props.item.distance})`;
+    }
+
     return (
       <Fragment>
         <div className='lb-row'>

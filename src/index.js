@@ -7,7 +7,8 @@ import * as serviceWorker from './serviceWorker';
 import AppProvider from './context/AppProvider'
 
 import App from './App';
-import ManageRoom from './pages/ManageRoom'
+import Rooms from './pages/Rooms'
+import Room from './pages/Room'
 
 import Amplify, { Analytics } from 'aws-amplify'
 import awsconfig from './aws-exports'
@@ -24,7 +25,8 @@ const routing = (
         <Router>
             <Switch>
                 <Route exact path='/' component={App} />
-                <Route path='/rooms/:room_id' component={ManageRoom} />
+                <Route path='/rooms/' component={Rooms} />
+                <Route path='/rooms/:room_id' component={Room} />
                 <Route component={App} />
             </Switch>
         </Router>

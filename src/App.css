@@ -78,7 +78,7 @@ footer {
 
 .lb-items .lb-header>div:nth-child(1),
 .lb-items .lb-row>div:nth-child(1) {
-  width: 50%;
+  width: 40%;
 }
 
 .lb-items .lb-header>div:nth-child(2),
@@ -92,7 +92,7 @@ footer {
 .lb-items .lb-row>div:nth-child(n+3) {
   display: block;
   text-align: left;
-  width: 30%;
+  width: 40%;
 }
 
 .lb-items .lb-rank1,
