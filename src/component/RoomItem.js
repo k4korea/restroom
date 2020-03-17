@@ -31,7 +31,7 @@ class App extends Component {
     }
 
     if (this.props.mode === 'dist') {
-      latest += ` (${this.props.item.distance})`;
+      latest += ` (${this.props.item.distance}, ${this.props.item.average})`;
     }
 
     return (
