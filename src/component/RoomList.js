@@ -5,17 +5,14 @@ import { API } from 'aws-amplify'
 import RoomItem from './RoomItem';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.getRooms();
+  }
+
   state = {
     items: [],
-  }
-
-  componentDidMount() {
-    this.getRooms();
-    this.intervalId = setInterval(this.getRooms.bind(this), 3000);
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.intervalId);
   }
 
   getRooms = async () => {
@@ -23,6 +20,7 @@ class App extends Component {
     if (res && res.length > 0) {
       this.reloaded(res);
     }
+    setTimeout(this.getRooms, 3000);
   }
 
   reloaded(res) {

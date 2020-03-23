@@ -9,6 +9,8 @@ class App extends Component {
     super(props);
 
     this.popupCmp = React.createRef();
+
+    this.getUser();
   }
 
   state = {
@@ -17,10 +19,6 @@ class App extends Component {
     real_name_class: 'text_normal width_80',
     real_name: '',
     image_url: '/avatar.png',
-  }
-
-  componentDidMount() {
-    this.getUser();
   }
 
   getUser = async () => {
